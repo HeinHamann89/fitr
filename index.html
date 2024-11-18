@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FITR Homepage</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-left">
+            <span class="brand">FITR</span>
+            <a href="#mission" class="nav-link">Mission</a>
+        </div>
+        <div class="nav-right">
+            <a href="#login" class="nav-link">Login</a>
+            <!-- "Get started" button remains here -->
+            <button class="btn get-started-btn">Get started</button>
+            <!-- Hamburger Menu -->
+            <div class="hamburger" aria-label="Toggle navigation" role="button" tabindex="0">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <a href="#mission" class="mobile-link">Mission</a>
+        <a href="#login" class="mobile-link">Login</a>
+        <!-- Button removed from here -->
+    </div>
+
+    <!-- Fullscreen Video Section -->
+    <section class="video-section">
+        <video autoplay muted loop class="video-background">
+            <source src="video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="overlay">
+            <h1>Personal training just got personal</h1>
+            <p>Create programs for clients and manage their nutrition, progress, and motive them with an interactive calendar.</p>
+            <button class="btn">Start now</button>
+        </div>
+    </section>
+
+   <!-- Features Section -->
+   <section class="features-section">
+    <div class="feature" onclick="location.href='#'">
+        <div class="feature-content">
+            <h2>Feature 1</h2>
+            <span class="arrow-icon">➔</span>
+        </div>
+    </div>
+    <div class="feature" onclick="location.href='#'">
+        <div class="feature-content">
+            <h2>Feature 2</h2>
+            <span class="arrow-icon">➔</span>
+        </div>
+    </div>
+    <div class="feature" onclick="location.href='#'">
+        <div class="feature-content">
+            <h2>Feature 3</h2>
+            <span class="arrow-icon">➔</span>
+        </div>
+    </div>
+</section>
+
+    <!-- Overlay for Mobile Menu -->
+    <div class="overlay-background"></div>
+
+    <!-- Scripts -->
+    <script src="scripts.js"></script>
+</body>
+</html>
